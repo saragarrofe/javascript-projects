@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; 
+  margin: 0; 
+  padding: 0; 
+  min-height: 100vh;
+  background: linear-gradient(to right, white 50%, rgba(155, 196, 244, 0.5) 50%);
+}
+
+.wp-global {
+  display: flex;
+  align-items: stretch; 
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;  
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between; 
+  flex-wrap: wrap;
+}
+
+.wp-result,
+.wp-form {
+  flex: 1;  
+  min-width: 300px;  
+  max-width: 800px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wp-result {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+}
+
+.image {
+  width: 60%; 
+}
+
+
+.wp-result .result {
+  text-align: center; 
+  width: 100%; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+}
+
+.right, .wrong {
+  width: 100%; 
+}
+
+.text {
+  font-size: 18px;
+  color: #9f8bd6;
+  font-weight: 600;
+}
+
+#messageSuccess,
+#imageSuccess,
+#messageError {
+  visibility: hidden;
+}
+
+
+.form {
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; 
+  padding: 45px;
+  margin: 45px;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+.form h2 {
+  font-size: 27px;
+  text-align: center;
+  margin: 0px 0 30px;
+}
+
+.form .form-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+.form-group {
+  flex: 1; 
+  padding: 0 10px; 
+}
+
+.form label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 7px;
+}
+
+.form input,
+.form select {
+  height: 45px;
+  padding: 10px;
+  width: 100%;
+  font-size: 12px;
+  outline: none;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #bfbfbf;
+  transition: all 0.3s ease;
+}
+
+.form input:focus,
+.form select:focus {
+  border-color: #9a9a9a;
+}
+
+.form input.error,
+.form textarea.error,
+.form select.error {
+  border-color: #f91919;
+  background: #f9f0f1;
+}
+
+.error-text {
+  font-size: 10px;
+  margin-top: 5px;
+  display: block;
+  color: #f91919;
+}
+
+.form .password i {
+  position: absolute;
+  right: 0px;
+  height: 45px;
+  top: 28px;
+  font-size: 12px;
+  line-height: 35px;
+  width: 45px;
+  cursor: pointer;
+  color: #939393;
+  text-align: center;
+}
+
+textarea::placeholder {
+  padding: 10px;
+}
+
+
+
+/* BUTTONS */
+
+.submit-btn {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 5px;
+  gap: 10px;
+}
+
+.submit-btn button {
+  color: white;
+  border: none;
+  height: auto;
+  font-size: 14px;
+  padding: 15px 55px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: center;
+  background: #3a83fb;
+  transition: 0.2s ease;
+}
+
+.submit-btn button:hover {
+  background: #0e6cfb;
+}
+
+
+
+/* Estilos para tablets */
+@media (max-width: 1024px) {
+  body {
+    background: white;
+  }
+
+  .wp-form {
+    background: rgba(155, 196, 244, 0.5);
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+
+  .form input, .form select, .form textarea {
+    font-size: 10px; 
+  }
+
+  .image{
+    width: 40%;
+  }
+
+  .text {
+    font-size: 12px;
+  }
+
+
+}
+
+/* Estilos para móviles */
+@media (max-width: 480px) {
+
+
+ 
+}
+
